@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-08-Create Placement Group inside EC2 Service</title>
+</head>
+<body>
+    <h1>::Project_08_Create Placement Group Inside EC2 Service in Mumbai region::</h1>
+    <h4>::Login With Root User::</h4>
+    <p>Step 1:first "login/sign-in" with "Root User" on "AWS Management Console".</p>
+    <img src="./Project_Image_08/Screenshot(01).png" width="1000px" height="450px">
+    <p>Step 2:Give the "email address" of the "Root User:(mdabdullahsheikh880@gmail.com)" on "AWS Management Console".</p>
+    <img src="./Project_Image_08/Screenshot(02).png" width="1000px" height="450px">
+    <p>Step 3:Give the Password of the "Root User:(Abdullah@-0***)" on "AWS Management console".</p>
+    <img src="./Project_Image_08/Screenshot(03).png" width="1000px" height="450px">
+    <p>Step 4:Search "EC2 Service" on the Search box and go to the inside "EC2 Service".</p>
+    <img src="./Project_Image_08/Screenshot(04).png" width="1000px" height="450px">
+    <img src="./Project_Image_08/Screenshot(05).png" width="1000px" height="450px">
+    <h4>::Create Placement Group::</h4>
+    <p>Step 5:In left side corner given placement groups, after go and click on that "Placement Groups", And after right side upper corner go and click on that "Create Placement Group".</p>
+    <img src="./Project_Image_08/Screenshot(06).png" width="1000px" height="450px">
+    <p>Step 6:Inside Create Placement Group in "Placement group settings", after you can give the "Name:Placement-group-Cluster", and After you can select on that "Placement Strategy:Cluster", after you can select on that "Create group".</p>
+    <img src="./Project_Image_08/Screenshot(07).png" width="1000px" height="450px">
+    <h4>::Launch Instance inside EC2 Service in Mumbai region::</h4>
+    <p>Step 7:Again in left side corner given "Instances" and click on that "Instances" and after In right corner upperside given "Launch Instances" go and click on that "Launch Instances"</p>
+    <img src="./Project_Image_08/Screenshot(08).png" width="1000px" height="450px">
+    <p>Step 8:Inside "Launch an Instance" given "Name and tags" you can give the "Name:Placement-WebServer" [It is upto you whatever you want to give any name inside "Name and tags", you can give any "Name and tags"].</p>
+    <img src="./Project_Image_08/Screenshot(09).png" width="1000px" height="450px">
+    <p>Step 9:Inside "Launch an Instance" "Application and OS Images (Amazon Machine Image{AMI})" gievn "Quick Start" you can select anyone "AMI" from the "Quick Start" for Example:"Amazon linux", or "MacOS", or "Ubuntu", or "Windows", "RedHat", etc...(Whatever you want, you can select anyone as your preference "AMI")But, now i can select one option "AMI" from the "Quick Start" "Amazon-linux", after you can keep in default somethings.</p>
+    <img src="./Project_Image_08/Screenshot(10).png" width="1000px" height="450px">
+    <p>Step 10:Inside "Launch an Instance" given "Instance type" you can select on that "c4.large"</p>
+    <img src="./Project_Image_08/Screenshot(11).png" width="1000px" height="450px">
+    <p>Step 11:Inside "Launch an Instance" given "key pair(login)" you can give anyone "Key pair name:mine_key".</p>
+    <img src="./Project_Image_08/Screenshot(12).png" width="1000px" height="450px">
+    <p>Step 12:Inside "Launch an Instance" given "Network Settings" click on "Edit" button on right side upper corner in "Network settings" and after select on that default "VPC:vpc0d03551655320d***", and after select on that default "Subnet:No preference"(Here i am not given any preference zone), and after select on that default "Auto-assign Public IP:Enable", and after select on that "Select existing security groups", after you can select on that "Common Security groups:AllForUsers-sec-grp", after you can keep in default sometings.</p>
+    <img src="./Project_Image_08/Screenshot(13).png" width="1000px" height="450px">
+    <img src="./Project_Image_08/Screenshot(14).png" width="1000px" height="450px">
+    <p>Step 13:Inside "Launch an Instance" in "Advanced details" after you can select on that "Termination Protection:Enable", after you can select on that "Stop Protection:Enable", after you can select on that "Placemengt group:placement-grp-cluster".</p>
+    <img src="./Project_Image_08/Screenshot(15).png" width="1000px" height="450px">
+    <img src="./Project_Image_08/Screenshot(16).png" width="1000px" height="450px">
+    <img src="./Project_Image_08/Screenshot(17).png" width="1000px" height="450px">
+    <img src="./Project_Image_08/Screenshot(18).png" width="1000px" height="450px">
+    <img src="./Project_Image_08/Screenshot(19).png" width="1000px" height="450px">
+    <p>Step 14:Inside "Launch an Instance" In "Advanced details" after you can write the Bash Script/Shell Script inside "User data - optional", After you can click on that "Launch instance".</p>
+    <img src="./Project_Image_08/Screenshot(20).png" width="1000px" height="450px">
+    <p>Step 15:After that you will get notification message, Saying that you have to Successfully "Launch Instances", After click on that "View all Instances" In below given dashboard Image.</p>
+    <img src="./Project_Image_08/Screenshot(21).png" width="1000px" height="450px">
+    <img src="./Project_Image_08/Screenshot(22).png" width="1000px" height="450px">
+    <p>Step 16:After select on that "Checkbox:WebServer01", after go and click on that "Connect", and after go and click on that "EC2 instance connect", and after go and click on that "Connect", after you can see "Command Line Interface(CLI)".</p>
+    <img src="./Project_Image_08/Screenshot(23).png" width="1000px" height="450px">
+    <img src="./Project_Image_08/Screenshot(24).png" width="1000px" height="450px">
+    <img src="./Project_Image_08/Screenshot(25).png" width="1000px" height="450px">
+    <p>Step 17:After you can right the Command line Interface(CLI) on EC2 instance Connect.</p>
+    <img src="./Project_Image_08/Screenshot(26).png" width="1000px" height="450px">
+    <img src="./Project_Image_08/Screenshot(27).png" width="1000px" height="450px">
+    <p>Step 18:Our html page is ready to check launch your server with running or not on your browser? after select the "checkbox:Webserver01, after go and copy on that "Public IPV4 Address:3.110.219.224" and after Paste the "Public IPV4 address:3.110.219.224" in another browser, finally, you can seen "Welcome to India" in your browser Successfully.</p>
+    <img src="./Project_Image_08/Screenshot(28).png" width="1000px" height="450px">
+    <img src="./Project_Image_08/Screenshot(29).png" width="1000px" height="450px">
+    <h4>Create Volumes</h4>
+    <p>Step 19:</p>
+</body>
+</html>
